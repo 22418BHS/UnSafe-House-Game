@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://mk4llqd46txu"]
+
+[ext_resource type="Texture2D" uid="uid://c46om35uvit1y" path="res://art/You Win-1.png.png" id="1_noiea"]
+
+[node name="win screen" type="Node2D"]
+position = Vector2(605, 413)
+
+[node name="words" type="Sprite2D" parent="."]
+position = Vector2(-7.50003, -15.5)
+scale = Vector2(18.7031, 12.3594)
+texture = ExtResource("1_noiea")

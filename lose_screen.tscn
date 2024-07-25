@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg7efxp7qowyp"]
+
+[ext_resource type="Texture2D" uid="uid://wuflb4cim4ru" path="res://art/You Lose-1.png.png" id="1_ei41f"]
+
+[node name="Lose screen" type="Node2D"]
+position = Vector2(595, 400)
+
+[node name="Words" type="Sprite2D" parent="."]
+position = Vector2(4.50003, -4.5)
+scale = Vector2(18.5469, 12.4531)
+texture = ExtResource("1_ei41f")

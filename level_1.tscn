@@ -1,19 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://ceubdgqx4s8mf"]
+[gd_scene load_steps=8 format=3 uid="uid://ceubdgqx4s8mf"]
 
 [ext_resource type="PackedScene" uid="uid://bdq6g5h12p1v7" path="res://world.tscn" id="1_6hf6g"]
+[ext_resource type="Script" path="res://level_1.gd" id="1_ppn1t"]
 [ext_resource type="PackedScene" uid="uid://c1n1qpay5euj5" path="res://sprites/player.tscn" id="2_8tk1m"]
 [ext_resource type="PackedScene" uid="uid://btauqbwjne8ho" path="res://sprites/enemy.tscn" id="3_c7rm7"]
 [ext_resource type="Script" path="res://sprites/enemy.gd" id="4_jvcu8"]
+[ext_resource type="PackedScene" uid="uid://d3c56qckc1ku" path="res://props/button.tscn" id="6_fs5lo"]
+[ext_resource type="PackedScene" uid="uid://cjsixgs1nkx40" path="res://props/lose_button.tscn" id="7_lxh3f"]
 
 [node name="Level 1" type="Node"]
+script = ExtResource("1_ppn1t")
 
 [node name="World" parent="." instance=ExtResource("1_6hf6g")]
 
 [node name="Player" parent="." instance=ExtResource("2_8tk1m")]
-position = Vector2(235, 229)
+position = Vector2(228, 250)
 
 [node name="Enemy9" parent="." instance=ExtResource("3_c7rm7")]
-position = Vector2(1420, 4380)
+position = Vector2(1158, 702)
 script = ExtResource("4_jvcu8")
 
 [node name="Enemy8" parent="." instance=ExtResource("3_c7rm7")]
@@ -39,3 +43,15 @@ position = Vector2(2864, 1264)
 
 [node name="Enemy1" parent="." instance=ExtResource("3_c7rm7")]
 position = Vector2(1420, 1264)
+
+[node name="LoseButton" parent="." instance=ExtResource("7_lxh3f")]
+offset_left = 1004.0
+offset_top = 11.0
+offset_right = 1347.0
+offset_bottom = 172.0
+
+[node name="Win button" parent="." instance=ExtResource("6_fs5lo")]
+offset_left = 700.0
+offset_top = 7.0
+offset_right = 931.0
+offset_bottom = 176.0

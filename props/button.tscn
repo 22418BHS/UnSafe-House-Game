@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3c56qckc1ku"]
+
+[ext_resource type="Script" path="res://Button.gd" id="1_cxpnk"]
+
+[node name="Win button" type="Button"]
+offset_right = 231.0
+offset_bottom = 169.0
+script = ExtResource("1_cxpnk")

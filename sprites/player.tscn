@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://c1n1qpay5euj5"]
+[gd_scene load_steps=5 format=3 uid="uid://c1n1qpay5euj5"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_qteoq"]
 [ext_resource type="Texture2D" uid="uid://cell3mdo8swgb" path="res://icon.svg" id="2_jxo2c"]
@@ -14,24 +14,17 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_b8qfq"]
-radius = 62.6618
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q8nxp"]
 size = Vector2(118, 119)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 position = Vector2(1, 0)
 collision_layer = 2
-collision_mask = 13
+collision_mask = 9
 script = ExtResource("1_qteoq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7vp1f")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0.5)
-shape = SubResource("CircleShape2D_b8qfq")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0)
